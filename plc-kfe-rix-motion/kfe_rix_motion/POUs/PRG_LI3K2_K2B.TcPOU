@@ -47,8 +47,11 @@ fbLI3K2(
     fbArbiter := GVL.fbArbiter2,
     fbFFHWO := GVL.fbFastFaultOutput2,
     stYStage := Main.M21,
-    sPmpsDeviceName := 'LI3K2:K2B',
+    sDeviceName := 'LI3K2:K2B',
     sTransitionKey := 'LI3K2:K2B-TRANSITION',
+    bEnableMotion := TRUE,
+    bEnableBeamParams := TRUE,
+    bEnablePositionLimits := TRUE,
 );]]></ST>
     </Implementation>
   </POU>

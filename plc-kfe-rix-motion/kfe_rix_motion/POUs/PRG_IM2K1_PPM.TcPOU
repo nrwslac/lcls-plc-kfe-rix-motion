@@ -47,8 +47,12 @@ fbIM2K1(
     fbArbiter := GVL.fbArbiter1,
     fbFFHWO := GVL.fbFastFaultOutput1,
     stYStage := Main.M2,
-    sPmpsDeviceName := 'IM2K1:PPM',
+    sDeviceName := 'IM2K1:PPM',
     sTransitionKey := 'IM2K1:PPM-TRANSITION',
+    bEnableMotion := TRUE,
+    bEnableBeamParams := TRUE,
+    bEnablePositionLimits := TRUE,
+    fFlowOffset := 0.0,
 );
     ]]></ST>
     </Implementation>

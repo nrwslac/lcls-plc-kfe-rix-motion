@@ -51,8 +51,11 @@ fbTM1K2(
     fbFFHWO := GVL.fbFastFaultOutput2,
     stYStage := Main.M9,
     stXStage := Main.M10,
-    sPmpsDeviceName := 'TM1K2:ATM',
+    sDeviceName := 'TM1K2:ATM',
     sTransitionKey := 'TM1K2:ATM-TRANSITION',
+    bEnableMotion := TRUE,
+    bEnableBeamParams := TRUE,
+    bEnablePositionLimits := TRUE,
 );
 ]]></ST>
     </Implementation>

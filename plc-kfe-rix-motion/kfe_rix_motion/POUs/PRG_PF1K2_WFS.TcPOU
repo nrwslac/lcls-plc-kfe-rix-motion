@@ -62,8 +62,11 @@ fbPF1K2(
     fbFFHWO := GVL.fbFastFaultOutput2,
     stYStage := Main.M12,
     stZStage := Main.M13,
-    sPmpsDeviceName := 'PF1K2:WFS',
+    sDeviceName := 'PF1K2:WFS',
     sTransitionKey := 'PF1K2:WFS-TRANSITION',
+    bEnableMotion := TRUE,
+    bEnableBeamParams := TRUE,
+    bEnablePositionLimits := TRUE,
 );
 ]]></ST>
     </Implementation>

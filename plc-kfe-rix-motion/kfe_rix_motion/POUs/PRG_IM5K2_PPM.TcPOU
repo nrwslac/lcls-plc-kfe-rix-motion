@@ -17,7 +17,8 @@ VAR
                               .fbYagThermoCouple.bError := TIIB[IM5K2-EL3314-E4]^TC Inputs Channel 2^Status^Error;
                               .fbYagThermoCouple.bUnderrange := TIIB[IM5K2-EL3314-E4]^TC Inputs Channel 2^Status^Underrange;
                               .fbYagThermoCouple.bOverrange := TIIB[IM5K2-EL3314-E4]^TC Inputs Channel 2^Status^Overrange;
-                              .fbYagThermoCouple.iRaw := TIIB[IM5K2-EL3314-E4]^TC Inputs Channel 2^Value'}
+                              .fbYagThermoCouple.iRaw := TIIB[IM5K2-EL3314-E4]^TC Inputs Channel 2^Value;
+                              .fbFlowMeter.iRaw := TIIB[IM5K2-EL3052-E5]^AI Standard Channel 1^Value'}
     fbIM5K2: FB_PPM;
 END_VAR
 ]]></Declaration>
@@ -47,8 +48,12 @@ fbIM5K2(
     fbArbiter := GVL.fbArbiter2,
     fbFFHWO := GVL.fbFastFaultOutput2,
     stYStage := Main.M14,
-    sPmpsDeviceName := 'IM5K2:PPM',
+    sDeviceName := 'IM5K2:PPM',
     sTransitionKey := 'IM5K2:PPM-TRANSITION',
+    bEnableMotion := TRUE,
+    bEnableBeamParams := TRUE,
+    bEnablePositionLimits := TRUE,
+    fFlowOffset := 0.0,
 );]]></ST>
     </Implementation>
   </POU>
